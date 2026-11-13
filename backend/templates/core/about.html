@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<section class="hero" style="padding:60px 0 40px;">
+  <div class="container">
+    <span class="eyebrow">Since 2014</span>
+    <h1>One studio.<br>No shortcuts.</h1>
+    <p class="lead">Maison Vera opened as a single chair in Bandra with one rule: never overbook. A decade later, we're six stylists, one studio, and the same rule.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">Our Approach</span>
+      <h2>Unhurried, by design.</h2>
+      <p>We don't run multiple locations and we don't intend to. Every appointment is booked with real slot durations, not padded guesses — which means when you arrive, your stylist is actually free.</p>
+      <p>Products used in-studio are also available to buy at the front desk — reserve online, pick up and pay in person.</p>
+    </div>
+    <div class="hero-ticket">
+      <div class="ticket-head">At a Glance</div>
+      <div class="ticket-row"><span>Founded</span><span>2014</span></div>
+      <div class="ticket-row"><span>Location</span><span>Bandra, Mumbai</span></div>
+      <div class="ticket-row"><span>Chairs</span><span>6</span></div>
+      <div class="ticket-row"><span>Stylists</span><span>6</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">What Matters to Us</span>
+    <h2>Three things we don't compromise on.</h2>
+    <div class="swatches" style="margin-top:34px;">
+      <div class="swatch">
+        <div class="swipe c1"></div>
+        <h3>Real time slots</h3>
+        <p>Every service has an honest duration. No overlap, no rushed finishes.</p>
+      </div>
+      <div class="swatch">
+        <div class="swipe c2"></div>
+        <h3>One stylist, one client</h3>
+        <p>Your stylist isn't juggling two chairs during your appointment.</p>
+      </div>
+      <div class="swatch">
+        <div class="swipe c4"></div>
+        <h3>Transparent pricing</h3>
+        <p>What's listed is what you pay — no hidden add-ons at checkout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <h2>Come see the studio.</h2>
+    <a href="{% url 'booking_page' %}" class="btn btn-primary">Book Appointment</a>
+  </div>
+</section>
+
+{% endblock %}

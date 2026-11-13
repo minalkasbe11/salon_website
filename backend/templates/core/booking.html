@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<section class="hero" style="padding:60px 0 40px;">
+  <div class="container">
+    <span class="eyebrow">Reserve Your Chair</span>
+    <h1>Book an Appointment</h1>
+    <p class="lead">Pick a service, choose a stylist or let us auto-assign, then select a time. Payment is at the salon.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container booking-wrap">
+
+    <form id="booking-form">
+
+      <div class="form-group">
+        <label for="service-select">Service</label>
+        <select id="service-select" required>
+          <option value="">Select a service</option>
+          <option value="haircut-women" data-price="900">Women's Haircut &amp; Style — 45 min</option>
+          <option value="haircut-men" data-price="450">Men's Haircut — 30 min</option>
+          <option value="colour" data-price="2800">Global Colour — 120 min</option>
+          <option value="balayage" data-price="4500">Balayage / Highlights — 180 min</option>
+          <option value="facial" data-price="1500">Classic Facial — 60 min</option>
+          <option value="massage" data-price="2200">Swedish Body Massage — 60 min</option>
+          <option value="mani-pedi" data-price="1200">Manicure &amp; Pedicure — 75 min</option>
+          <option value="bridal-trial" data-price="3500">Bridal Makeup Trial — 90 min</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="stylist-select">Stylist</label>
+        <select id="stylist-select">
+          <option value="">Any Available (Auto-assign)</option>
+          <option value="aisha">Aisha Rahman — Hair &amp; Colour</option>
+          <option value="rohan">Rohan Mehta — Hair</option>
+          <option value="priya">Priya Nair — Skin &amp; Spa</option>
+          <option value="sana">Sana Sheikh — Bridal &amp; Makeup</option>
+          <option value="karan">Karan Kapoor — Hair</option>
+          <option value="leela">Leela Menon — Spa</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Available Time Slots</label>
+        <div class="slot-grid">
+          <div class="slot">10:00 AM</div>
+          <div class="slot">11:00 AM</div>
+          <div class="slot disabled">12:00 PM</div>
+          <div class="slot">1:30 PM</div>
+          <div class="slot">2:30 PM</div>
+          <div class="slot disabled">4:00 PM</div>
+          <div class="slot">5:00 PM</div>
+          <div class="slot">6:30 PM</div>
+          <div class="slot">7:30 PM</div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" rows="3" placeholder="Any special request for your stylist"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </form>
+
+    <aside class="booking-summary">
+      <h3>Booking Summary</h3>
+      <div class="summary-row"><span>Service</span><span id="summary-service">—</span></div>
+      <div class="summary-row"><span>Stylist</span><span id="summary-stylist">Any available</span></div>
+      <div class="summary-row"><span>Time</span><span id="summary-time">—</span></div>
+      <div class="summary-row"><span>Est. Price</span><span id="summary-price">—</span></div>
+      <div class="summary-row"><span>Payment</span><span>Pay at Salon</span></div>
+      <p class="summary-note">You'll receive a confirmation by SMS/email once your booking is placed. Payment is collected in-studio after your service.</p>
+    </aside>
+
+  </div>
+</section>
+
+{% endblock %}

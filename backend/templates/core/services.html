@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<section class="hero services-hero">
+    <div class="container hero-grid">
+
+        <!-- Left Content -->
+        <div class="hero-content">
+            <span class="eyebrow">Price List</span>
+            <h1>Services &amp; Pricing</h1>
+            <p class="lead">
+                All prices are per session, payable at the salon.
+                Duration includes consultation time.
+            </p>
+        </div>
+
+        <!-- Right Images -->
+        <div class="hero-images">
+            <img src="{% static 'core/images/st.png' %}" alt="Haircut" max-width="50%">
+        </div>
+
+    </div>
+</section>
+
+<div class="container">
+
+  <div class="service-category">
+    <div class="cat-label">
+      <div class="swipe-dot" style="background:linear-gradient(135deg,#C98B93,#A9636D);"></div>
+      <div>
+        <span class="eyebrow" style="margin:0;">01 — Hair</span>
+        <h2 class="mt-0">Cut &amp; Colour</h2>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div><div class="s-name">Women's Haircut &amp; Style</div><p class="s-desc">Consultation, wash, cut, and blow-dry finish.</p></div>
+      <div class="s-meta">₹900<small>45 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Men's Haircut</div><p class="s-desc">Precision cut with beard line-up on request.</p></div>
+      <div class="s-meta">₹450<small>30 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Global Colour</div><p class="s-desc">Full head colour, ammonia-free formulas available.</p></div>
+      <div class="s-meta">₹2,800<small>120 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Balayage / Highlights</div><p class="s-desc">Hand-painted or foil highlights with toner.</p></div>
+      <div class="s-meta">₹4,500<small>180 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Keratin Smoothening</div><p class="s-desc">Frizz-control treatment, lasts up to 4 months.</p></div>
+      <div class="s-meta">₹5,500<small>150 min</small></div>
+    </div>
+  </div>
+
+  <div class="service-category">
+    <div class="cat-label">
+      <div class="swipe-dot" style="background:linear-gradient(135deg,#B99760,#8f7546);"></div>
+      <div>
+        <span class="eyebrow" style="margin:0;">02 — Skin</span>
+        <h2 class="mt-0">Facials &amp; Skin</h2>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div><div class="s-name">Classic Facial</div><p class="s-desc">Cleanse, exfoliate, mask — skin-type matched.</p></div>
+      <div class="s-meta">₹1,500<small>60 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Fruit Peel Facial</div><p class="s-desc">Brightening treatment for dull, tired skin.</p></div>
+      <div class="s-meta">₹1,900<small>60 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Threading — Full Face</div><p class="s-desc">Eyebrows, upper lip, and forehead.</p></div>
+      <div class="s-meta">₹250<small>20 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">De-tan Pack</div><p class="s-desc">Face and neck, sun-damage focused.</p></div>
+      <div class="s-meta">₹700<small>30 min</small></div>
+    </div>
+  </div>
+
+  <div class="service-category">
+    <div class="cat-label">
+      <div class="swipe-dot" style="background:linear-gradient(135deg,#6b4c58,#2B1B24);"></div>
+      <div>
+        <span class="eyebrow" style="margin:0;">03 — Spa</span>
+        <h2 class="mt-0">Massage &amp; Spa</h2>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div><div class="s-name">Swedish Body Massage</div><p class="s-desc">Full body, relaxation-focused, oil-based.</p></div>
+      <div class="s-meta">₹2,200<small>60 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Manicure &amp; Pedicure</div><p class="s-desc">Includes shape, cuticle care, and polish.</p></div>
+      <div class="s-meta">₹1,200<small>75 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Steam &amp; Sauna Session</div><p class="s-desc">Stand-alone or add-on to any spa service.</p></div>
+      <div class="s-meta">₹500<small>20 min</small></div>
+    </div>
+  </div>
+
+  <div class="service-category">
+    <div class="cat-label">
+      <div class="swipe-dot" style="background:linear-gradient(135deg,#d8c7a8,#B99760);"></div>
+      <div>
+        <span class="eyebrow" style="margin:0;">04 — Bridal</span>
+        <h2 class="mt-0">Bridal &amp; Makeup</h2>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div><div class="s-name">Bridal Makeup — Trial</div><p class="s-desc">Full look trial, recommended 2 weeks before.</p></div>
+      <div class="s-meta">₹3,500<small>90 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Bridal Makeup — Wedding Day</div><p class="s-desc">HD makeup, hairstyling, and draping.</p></div>
+      <div class="s-meta">₹12,000<small>180 min</small></div>
+    </div>
+    <div class="service-row">
+      <div><div class="s-name">Party Makeup</div><p class="s-desc">For guests and events, on-location available.</p></div>
+      <div class="s-meta">₹2,500<small>75 min</small></div>
+    </div>
+  </div>
+
+</div>
+
+<section class="section text-center">
+  <div class="container">
+    <h2>Not sure what you need?</h2>
+    <p>Book a consultation slot — no charge, no commitment.</p>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<section class="hero" style="padding:60px 0 40px;">
+  <div class="container">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Contact Us</h1>
+    <p class="lead">Questions about services, membership, or a booking you already made — reach us any of these ways.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container two-col">
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <div class="hero-ticket">
+      <div class="ticket-head">Visit Us</div>
+      <div class="ticket-row"><span>Address</span><span style="text-align:right;">14 Chapel Road,<br>Bandra West, Mumbai</span></div>
+      <div class="ticket-row"><span>Phone</span><span>+91 98200 00000</span></div>
+      <div class="ticket-row"><span>Email</span><span>hello@maisonvera.in</span></div>
+      <div class="ticket-row"><span>Mon–Sat</span><span>10:00–20:00</span></div>
+      <div class="ticket-row"><span>Sunday</span><span>11:00–18:00</span></div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<section class="hero"
+    style="background-image: linear-gradient(rgba(255,255,255,0.7), rgb(190 103 103 / 70%)), url('{% static 'core/images/index.jpg' %}');">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Est. 2014 — Bandra, Mumbai</span>
+      <h1>Slow beauty,<br>done properly.</h1>
+      <p class="lead">A single studio, unhurried appointments, and stylists who actually remember your last colour formula. Walk in, or reserve your chair below.</p>
+      <div class="hero-actions">
+        <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+      </div>
+    </div>
+    <div class="hero-ticket">
+      <div class="ticket-head">Today at Maison Vera</div>
+      <div class="ticket-row"><span>Open</span><span>10:00 — 20:00</span></div>
+      <div class="ticket-row"><span>Chairs free right now</span><span>3</span></div>
+      <div class="ticket-row"><span>Next available slot</span><span>2:30 PM</span></div>
+      <div class="ticket-row"><span>Walk-ins</span><span>Welcome</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="swatch-strip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">What we do</span>
+        <h2>Four disciplines,<br>one standard.</h2>
+      </div>
+      <a href="services.html" class="btn btn-outline">Full price list →</a>
+    </div>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swipe c1"></div>
+        <span class="code">01 — HAIR</span>
+        <h3>Cut &amp; Colour</h3>
+        <p>Precision cuts, balayage, and formula-matched colour correction.</p>
+      </div>
+      <div class="swatch">
+        <div class="swipe c2"></div>
+        <span class="code">02 — SKIN</span>
+        <h3>Facials &amp; Skin</h3>
+        <p>Deep-cleanse facials, peels, and threading, tailored to your skin.</p>
+      </div>
+      <div class="swatch">
+        <div class="swipe c3"></div>
+        <span class="code">03 — SPA</span>
+        <h3>Massage &amp; Spa</h3>
+        <p>Full-body massage, manicure-pedicure, and steam therapy.</p>
+      </div>
+      <div class="swatch">
+        <div class="swipe c4"></div>
+        <span class="code">04 — BRIDAL</span>
+        <h3>Bridal &amp; Makeup</h3>
+        <p>Trial-first bridal packages and event makeup, done on location.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">Membership</span>
+      <h2>Become a regular.<br>Save on every visit.</h2>
+      <p>Our membership gives you a flat discount across every service, priority booking on weekends, and a complimentary treatment every quarter. No online billing to manage — just show your card in-studio.</p>
+      <a href="contact.html" class="btn btn-primary">Ask About Membership</a>
+    </div>
+    <div class="hero-ticket">
+      <div class="ticket-head">Membership Card</div>
+      <div class="ticket-row"><span>Discount on all services</span><span>15%</span></div>
+      <div class="ticket-row"><span>Priority weekend slots</span><span>Yes</span></div>
+      <div class="ticket-row"><span>Complimentary treatment</span><span>1 / quarter</span></div>
+      <div class="ticket-row"><span>Validity</span><span>12 months</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <span class="eyebrow">In their words</span>
+    <h2>Clients who keep<br>coming back.</h2>
+    <div class="testimonial-strip">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"First salon where the colour actually matched the swatch I picked. Booked my next visit before I even left the chair."</p>
+        <div class="who">— Ritika S.</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Auto-assign got me a stylist on a Sunday afternoon with zero wait. Didn't expect that from a walk-in slot."</p>
+        <div class="who">— Farhan K.</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"The membership paid for itself in two visits. Wish more places did flat, honest pricing like this."</p>
+        <div class="who">— Meera J.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Your chair is<br>waiting.</h2>
+    <a href="booking.html" class="btn btn-primary">Book Your Appointment</a>
+  </div>
+</section>
+
+{% endblock %}

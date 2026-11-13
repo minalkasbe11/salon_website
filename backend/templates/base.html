@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Vera — Salon &amp; Spa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+{% block style %}
+
+{% endblock %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="{% url 'home' %}" class="logo">Maison <span>Vera</span></a>
+    <ul class="nav-links">
+      <li><a href="{% url 'home' %}" class="active">Home</a></li>
+      <li><a href="{% url 'services_page' %}">Services</a></li>
+      <li><a href="{% url 'stylists_page' %}">Stylists</a></li>
+      <li><a href="{% url 'about_page' %}">About</a></li>
+      <li><a href="{% url 'contact_page' %}">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="{% url 'booking_page' %}" class="btn btn-primary">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+{% block body %}
+{% endblock %}
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Maison Vera</h4>
+        <p>14 Chapel Road, Bandra West,<br>Mumbai 400050</p>
+        <p>+91 98200 00000</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="{% url 'services_page' %}">Services</a>
+        <a href="{% url 'stylists_page' %}">Stylists</a>
+        <a href="{% url 'about_page' %}">About</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <a href="{% url 'booking_page' %}">Book Appointment</a>
+        <a href="{% url 'contact_page' %}">Contact</a>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat, 10:00–20:00</p>
+        <p>Sunday, 11:00–18:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Maison Vera Salon &amp; Spa</span>
+      <span>Front-end template — no backend connected</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
