@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  /* Maison Vera brand palette — ported 1:1 from static/core/css/style.css */
+  --color-ink: #2B1B24;
+  --color-ink-soft: #4A3641;
+  --color-paper: #F4EDE4;
+  --color-paper-dim: #EAE0D3;
+  --color-rose: #C98B93;
+  --color-rose-deep: #A9636D;
+  --color-gold: #B99760;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --radius-brand: 2px;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display font-semibold tracking-tight;
+}
+
+.eyebrow {
+  @apply font-mono text-[0.72rem] tracking-[0.14em] uppercase text-rose-deep inline-block mb-3;
+}
+
+.container {
+  @apply max-w-285 mx-auto px-7;
+}
+
+.card-hover {
+  @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_10px_30px_-12px_rgba(43,27,36,0.25)];
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 font-mono text-[0.82rem] tracking-[0.05em] uppercase px-6 py-3.5 rounded-brand border border-transparent transition-colors duration-200 cursor-pointer;
+}
+.btn-primary {
+  @apply bg-ink text-paper hover:bg-rose-deep;
+}
+.btn-outline {
+  @apply border-ink text-ink hover:bg-ink hover:text-paper;
+}
+.btn-light {
+  @apply bg-paper text-ink hover:bg-rose;
+}
